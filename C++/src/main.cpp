@@ -2,6 +2,8 @@
 #include "player.h"
 #include "menu.h"
 #include "pause.h"
+
+
 enum Scene
 {
     Menu,
@@ -13,13 +15,15 @@ int main()
 {
     InitWindow(1280, 720, "game_project");
     SetTargetFPS(60);
+#include "texures.h"
+
     while (!WindowShouldClose())
     {
         SetExitKey(0);
 
         BeginDrawing();
         ClearBackground(BLACK);
-
+        DrawFPS(10, 10);
         switch (scene)
         {
         case Menu:
@@ -29,8 +33,8 @@ int main()
 
             break;
         case Game:
-            player(Rectangle{0, 600, 1000, 10});
-            DrawRectangle(0, 600, 1000, 100, DARKBLUE);
+            player(Rectangle{0, 650, 1500, 10}, Player_Run, framewidht);
+            DrawRectangle(0, 650, 1500, 100, PINK);
             if (IsKeyPressed(KEY_ESCAPE))
                 scene = Pause;
             break;
@@ -43,7 +47,6 @@ int main()
 
         EndDrawing();
     }
-
     CloseWindow();
     return 0;
 }

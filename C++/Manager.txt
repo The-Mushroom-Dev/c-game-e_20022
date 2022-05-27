@@ -1,0 +1,25 @@
+//To do
+
+Fix Inverse Gravity [jumping]
+Animation / Animation optimizatiion + scalling
+play animation + flipped version on keypressed [change after velocity]
+map editor [tiled] / [binnary format 1001001]
+sprites for tiles [grass , dirt , etc]
+enemy behaviour
+enemy sprites + animations
+spikes [spikes_sprites]
+story_line [Levels] / [Next Level Button]
+GameOver Screen [Dieing]
+Reload the level [Button]
+Better Main Menu [Start / Options / Quit] / [Level Selector] / [Credits]
+pickups [Power Ups] / [tools] / [sprites and animations]
+Sounds [sfx]
+
+//Done
+
+window
+Rendering texture
+scalling
+player [movement]
+fixed on other PC's
+optimization for images/textures
